@@ -5,7 +5,7 @@ import { FaMagnifyingGlass} from "react-icons/fa6";
 function Header() {
   return (
     <>
-      <nav>
+      <nav className='sticky top-0 z-10' >
         <div className="w-full h-20 bg-[#1A1A1A] flex items-center justify-between">
           <img className="w-30 h-10 ml-8" src="/public/Logo.png" alt="logo" />
           <div className="w-1/3 flex items-center rounded-lg border-[#303030] bg-[#303030] border  text-white ">
