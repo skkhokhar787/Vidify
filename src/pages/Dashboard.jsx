@@ -12,7 +12,7 @@ function Dashboard() {
         <h1 className="font-bold text-2xl">Welcome to Vidify</h1>
         <p>Enhance your video creation with the power of AI</p>
       </div>
-      <ProgressCard />
+      <ProgressCard Plan={"Explorer – 2 AI Videos /Month"} Limit={"0/2 Videos"}/>
       <ImgCard
         heading="Generate Stunning AI-Videos from Product Images"
         img="image-15.png"

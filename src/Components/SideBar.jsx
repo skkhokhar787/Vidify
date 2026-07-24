@@ -11,7 +11,9 @@ import ProductSVGIcon, {
   OnlineShopingSvgIcons,
   PointSaleSvgIcons,
   ShopSvgIcons,
+  SettingsSvgIcons,
 } from "./AllSvgIcons";
+import { Link } from "react-router-dom";
 
 function SideBar() {
   return (
@@ -23,9 +25,9 @@ function SideBar() {
           transition: fill 200ms ease;
         }
       `}</style>
-      <aside className="sidebar-nav w-65 shadow-lg z-5 shrink-0 h-full overflow-y-auto bg-[#F1F1F1]  p-4 text-sm text-gray-700">
+      <aside className="sidebar-nav w-65 shadow-lg z-5 shrink-0 h-340 overflow-y-auto bg-[#F1F1F1] p-4 text-sm text-gray-700">
         <ul className="space-y-2">
-          <MenuItem name={"Home"} Icon={HomeSVGIcon} />
+          <Link to="/dashboard"><MenuItem name={"Home"} Icon={HomeSVGIcon} /></Link>
           <MenuItem name={"Orders"} Icon={OrdersSVGIon} />
           <MenuItem name={"Products"} Icon={ProductSVGIcon} />
           <MenuItem name={"Customer"} Icon={CustomerSvgIcons} />
@@ -57,14 +59,20 @@ function SideBar() {
                 />
                 <span className="font-semibold text-gray-900">Vidify</span>
               </li>
-              <li className="flex items-center p-2 pl-8 rounded hover:cursor-pointer hover:bg-gray-200/70 text-gray-600">
+              <Link
+                to="/generate"
+                className="flex font-medium items-center p-2 pl-8 hover:font-medium hover:text-black hover:cursor-pointer hover:bg-white hover:rounded-2xl text-gray-600"
+              >
                 <span>Generate Video</span>
-              </li>
-              <li className="flex items-center p-2 pl-8 rounded hover:cursor-pointer hover:bg-gray-200/70 text-gray-600">
+              </Link>
+              <li className="flex font-medium items-center p-2 pl-8 hover:font-medium hover:text-black rounded hover:cursor-pointer hover:bg-white hover:rounded-2xl text-gray-600">
                 <span>Subscription Plan</span>
               </li>
             </ul>
           </div>
+        </div>
+        <div className="flex items-center mt-156 gap-2 justify-center ml-4 w-fit hover:cursor-pointer  ">
+          <SettingsSvgIcons /><p>Settings</p>
         </div>
       </aside>
     </>
