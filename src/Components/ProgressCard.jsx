@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LimitCard() {
+function ProgressCard() {
   return (
     <>
     <div className="flex justify-center border-2 border-zinc-300 w-250 rounded-2xl ml-12 h-auto">
@@ -47,5 +47,5 @@ function LimitCard() {
   )
 }
 
-export default LimitCard
+export default ProgressCard;
 

@@ -1,9 +1,8 @@
 import { useState } from "react";
-import "./App.css";
-import Header from "./Components/Header/Header";
-import SideBar from "./Components/SideBar/SideBar";
-import VidiBar from "./Components/VidiBar/VidiBar";
-import Dashboard from "./Dashboard/Dashboard";
+import Header from "./Components/Header";
+import SideBar from "./Components/SideBar";
+import VidiBar from "./Components/VidiBar";
+import Dashboard from "./pages/Dashboard.jsx";
 
 function App() {
   return (
