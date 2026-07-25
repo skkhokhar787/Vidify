@@ -4,23 +4,25 @@ import SimpleBtn from "./SimpleBtn";
 
 function ImgCard({ heading, img, boadyPara, icon, dis, buttonText, className = "" }) {
   return (
-    <>
-      <div className={`flex items-center w-full ${className}`}>
-        <div className="flex items-center border-2 border-zinc-300 w-250 rounded-2xl h-50 overflow-hidden ml-12 mt-5 shadow-[0_10px_10px_rgba(0,0,0,0.)]">
+    <div className={`w-full px-3 sm:px-6 md:px-12 mt-4 md:mt-5 ${className}`}>
+      <div className="flex flex-col md:flex-row items-stretch border border-zinc-300 rounded-xl md:rounded-2xl overflow-hidden shadow-sm">
+        <div className="w-full md:w-2/5 shrink-0">
+          <img
+            className="w-full h-40 sm:h-48 md:h-full object-cover"
+            src={img}
+            alt="img"
+          />
+        </div>
+        <div className="bg-white p-3 sm:p-4 md:p-5 flex flex-col justify-between flex-1 min-w-0">
           <div>
-            <img
-              className="w-100 rounded-tl-2xl rounded-bl-2xl"
-              src={img}
-              alt="img"
-            />
-          </div>
-          <div className="bg-white p-3 h-50 w-[70%] rounded-tr-2xl rounded-br-2xl mt-2">
-            <h2 className="font-semibold">
+            <h2 className="font-semibold text-sm sm:text-base md:text-lg leading-snug">
               {heading}
             </h2>
-            <p className="mt-2 font-sans">
+            <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">
               {boadyPara}
             </p>
+          </div>
+          <div className="mt-3 sm:mt-4 md:mt-6">
             {buttonText ? (
               <SimpleBtn text={buttonText} />
             ) : (
@@ -29,7 +31,7 @@ function ImgCard({ heading, img, boadyPara, icon, dis, buttonText, className = "
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -17,26 +17,26 @@ function Storeware() {
   }
 
   return (
-    <>
-      <div className='bg-white rounded-2xl mt-6 w-250 ml-12 '>
-        <h1 className='font-bold ml-6 mb-3 mt-4'>Other apps from Storeware</h1>
+    <div className="mx-3 sm:mx-6 md:mx-12 mt-5 md:mt-6">
+      <div className="bg-white border border-zinc-300 rounded-xl md:rounded-2xl w-full overflow-hidden">
+        <h1 className="font-bold text-sm sm:text-base md:text-lg ml-3 sm:ml-4 md:ml-6 mt-3 md:mt-4 mb-2 md:mb-3">Other apps from Storeware</h1>
         <OtherAppsCard cardData={otherAppData[idx]} />
-        <div className='flex gap-4 justify-end p-4 bg-[#f7f7f7] w-full h-12 rounded-bl-2xl rounded-br-2xl'>
-          <div className='p-2 cursor-pointer' onClick={handlePrev}>
+        <div className="flex gap-3 sm:gap-4 justify-end p-3 sm:p-4 bg-[#f7f7f7] w-full h-10 sm:h-12 rounded-bl-xl rounded-br-xl md:rounded-bl-2xl md:rounded-br-2xl">
+          <div className="p-1.5 sm:p-2 cursor-pointer" onClick={handlePrev}>
             <PrvSvgIcons
-            disabled={isFirstItem}
-            className={` ${isFirstItem ? 'opacity-50 cursor-not-allowed pointer-events-none' : ''}`}
-          />
+              disabled={isFirstItem}
+              className={`${isFirstItem ? 'opacity-50 cursor-not-allowed pointer-events-none' : ''}`}
+            />
           </div>
-          <div className='p-2 cursor-pointer' onClick={handleNext}>
+          <div className="p-1.5 sm:p-2 cursor-pointer" onClick={handleNext}>
             <NextSvgIcons
-            disabled={isLastItem}
-            className={` ${isLastItem ? 'opacity-50 cursor-not-allowed pointer-events-none' : ''}`}
-          />
+              disabled={isLastItem}
+              className={`${isLastItem ? 'opacity-50 cursor-not-allowed pointer-events-none' : ''}`}
+            />
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
