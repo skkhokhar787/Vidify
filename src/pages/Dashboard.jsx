@@ -15,7 +15,7 @@ function Dashboard() {
       <ProgressCard Plan={"Explorer – 2 AI Videos /Month"} Limit={"0/2 Videos"} />
       <ImgCard
         heading="Generate Stunning AI-Videos from Product Images"
-        img="image-15.png"
+        img="/image-15.png"
         boadyPara="Turn your product images into scroll-stopping marketing videos in seconds. Just upload images; we'll add dynamic animations and effects for a high-converting result."
         icon={AiBtnSVGs}
         dis={"Generate AI Video"}
@@ -23,7 +23,7 @@ function Dashboard() {
       <InfoDocCard />
       <ImgCard className="mb-4 sm:mb-6 md:mb-8"
         heading="Want to schedule a call?"
-        img="23.png"
+        img="/23.png"
         boadyPara="We have marketing experts ready to help build your video marketing strategy scaling your store with video. Want to book a one-to-one session? It's FREE!"
         icon={CallBtnSVGs}
         dis={"Talk to Vidify Expert"}
@@ -31,7 +31,7 @@ function Dashboard() {
       <Storeware />
       <ImgCard className="mb-4 sm:mb-6 md:mb-8"
         heading="Get our free Shopify SEO guide"
-        img="book.png"
+        img="/book.png"
         boadyPara="Grab your copy today & discover the secrets to optimizing your Shopify store for search engines"
         buttonText="Get the Free eBook"
       />

@@ -3,7 +3,7 @@ import { RectangleSvgIcons } from "../Components/AllSvgIcons";
 let dashboardData = [
   {
     id: 1,
-    pic:"case01.jpg",
+    pic:"/case01.jpg",
     name: "stylish-summer-necklace",
     images: 3,
     status: "Active",
@@ -12,7 +12,7 @@ let dashboardData = [
   },
   {
     id: 2,
-    pic:"armChair.jpg",
+    pic:"/armChair.jpg",
     name: "threader-necklace-closeup",
     images: 5,
     status: "Active",
@@ -21,7 +21,7 @@ let dashboardData = [
   },
   {
     id: 3,
-    pic:"bed01.jpg",
+    pic:"/bed01.jpg",
     name: "silver-threader-necklace",
     images: 2,
     status: "Draft",
@@ -30,7 +30,7 @@ let dashboardData = [
   },
   {
     id: 4,
-    pic:"bed02.jpg",
+    pic:"/bed02.jpg",
     name: "silver-threader-necklace",
     images: 2,
     status: "Active",
@@ -39,7 +39,7 @@ let dashboardData = [
   },
   {
     id: 5,
-    pic:"chair01.jpg",
+    pic:"/chair01.jpg",
     name: "threader-necklace-closeup",
     images: 2,
     status: "Active",
@@ -48,7 +48,7 @@ let dashboardData = [
   },
   {
     id: 6,
-    pic:"chair02.jpg",
+    pic:"/chair02.jpg",
     name: "silver-threader-necklace",
     images: 2,
     status: "Active",
@@ -57,7 +57,7 @@ let dashboardData = [
   },
   {
     id: 7,
-    pic:"chair03.jpg",
+    pic:"/chair03.jpg",
     name: "silver-threader-necklace",
     images: 2,
     status: "Active",
@@ -66,7 +66,7 @@ let dashboardData = [
   },
   {
     id: 8,
-    pic:"clock01.jpg",
+    pic:"/clock01.jpg",
     name: "silver-threader-necklace",
     images: 2,
     status: "Active",
@@ -75,7 +75,7 @@ let dashboardData = [
   },
   {
     id: 9,
-    pic:"table01.jpg",
+    pic:"/table01.jpg",
     name: "threader-necklace-closeup",
     images: 2,
     status: "Active",
@@ -85,7 +85,7 @@ let dashboardData = [
   },
   {
     id: 10,
-    pic:"table02.jpg",
+    pic:"/table02.jpg",
     name: "silver-threader-necklace",
     images: 2,
     status: "Active",
@@ -94,7 +94,7 @@ let dashboardData = [
   },
   {
     id: 11,
-    pic:"table03.jpg",
+    pic:"/table03.jpg",
     name: "silver-threader-necklace",
     images: 2,
     status: "Active",
@@ -103,7 +103,7 @@ let dashboardData = [
   },
   {
     id: 12,
-    pic:"dresser01.jpg",
+    pic:"/dresser01.jpg",
     name: "silver-threader-necklace",
     images: 2,
     status: "Active",

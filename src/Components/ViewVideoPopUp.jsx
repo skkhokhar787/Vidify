@@ -47,11 +47,11 @@ function ViewVideoPopUp({ onClose, video }) {
         <div className="flex flex-col md:flex-row gap-4 px-4 sm:px-7">
           <div className="w-full md:w-1/2">
             <label className="block mb-1 text-xs sm:text-sm font-medium">Version 1</label>
-            <VideoThumbnail img={"/public/m_img01.png"} />
+            <VideoThumbnail img={"/m_img01.png"} />
           </div>
           <div className="w-full md:w-1/2">
             <label className="block mb-1 text-xs sm:text-sm font-medium">Version 2</label>
-            <VideoThumbnail img={"/public/m_img03.png"} />
+            <VideoThumbnail img={"/m_img03.png"} />
           </div>
         </div>
 
@@ -61,11 +61,11 @@ function ViewVideoPopUp({ onClose, video }) {
           <div className="flex gap-4 sm:gap-6">
             <div>
               <label className="text-xs sm:text-sm font-medium">Start Image</label>
-              <img className="w-16 h-20 sm:w-22 sm:h-25 rounded-lg object-cover mt-1" src="/public/m_img01.png" alt="" />
+              <img className="w-16 h-20 sm:w-22 sm:h-25 rounded-lg object-cover mt-1" src="/m_img01.png" alt="" />
             </div>
             <div>
               <label className="text-xs sm:text-sm font-medium">End Image</label>
-              <img className="w-16 h-20 sm:w-22 sm:h-25 rounded-lg object-cover mt-1" src="/public/m_img03.png" alt="" />
+              <img className="w-16 h-20 sm:w-22 sm:h-25 rounded-lg object-cover mt-1" src="/m_img03.png" alt="" />
             </div>
           </div>
           <div className="flex-1 min-w-0">

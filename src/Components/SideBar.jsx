@@ -62,7 +62,7 @@ function SideBar({ open, onClose }) {
               <li className="flex items-center gap-3 p-2 rounded hover:cursor-pointer hover:bg-gray-200/70">
                 <img
                   className="w-4.5"
-                  src="/public/Vidify-logo.png"
+                  src="/Vidify-logo.png"
                   alt="Vidify logo"
                 />
                 <span className="font-semibold text-gray-900">Vidify</span>

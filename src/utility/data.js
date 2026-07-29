@@ -1,6 +1,6 @@
 export let otherAppData = [
     {
-        image:"26.png",
+        image:"/26.png",
         title:"BetterDocs for Shopify – Advanced Knowledge Base App",
         des:"Boost customer satisfaction with an efficient AI-enhanced knowledge base & FAQ system. Build smart documentation and reduce support load easily.",
         points:[
@@ -12,7 +12,7 @@ export let otherAppData = [
     },
 
     {
-        image:"./28.png",
+        image:"/28.png",
         title:"StoreFAQ-Product FAQ Builder",
         des:"Create FAQ pages or build individual product FAQs with AI to reduce support tickets and improve the customer experience.",
         points:[
@@ -24,7 +24,7 @@ export let otherAppData = [
     },
 
     {
-        image:"27.png",
+        image:"/27.png",
         title:"TrustSync - Review Collection App",
         des:"Boost your business reputation by collecting reviews for Google Review, Trustpilot, Etsy & more while filtering out negative ratings.",
         points:[
@@ -36,7 +36,7 @@ export let otherAppData = [
     },
 
     {
-        image:"30.png",
+        image:"/30.png",
         title:"StoreSEO - AI SEO Agent",
         des:"StoreSEO is an AI-powered Shopify app to boost your store’s search engine rankings and organic traffic through AI SEO optimization.",
         points:[

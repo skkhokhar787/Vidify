@@ -23,7 +23,7 @@ function MakeVideoPopUp({ onClose }) {
             <div key={i} className="relative">
               <img
                 className="w-16 h-18 sm:w-20 sm:h-22 rounded-2xl object-cover"
-                src={`/public/${img}.png`}
+                src={`/${img}.png`}
                 alt=""
               />
               <div className={`absolute top-2 right-2 ${i === 0 ? "bg-black/60" : "bg-white border border-zinc-300"} rounded-sm p-1.5`}>
@@ -38,7 +38,7 @@ function MakeVideoPopUp({ onClose }) {
         </div>
 
         <div className="border-2 mt-5 sm:mt-7 border-zinc-300 flex flex-col sm:flex-row gap-3 sm:gap-4 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
-          <img className="w-full sm:w-1/2 h-48 sm:h-80 md:h-100 rounded-2xl object-cover" src="/public/m_img01.png" alt="" />
+          <img className="w-full sm:w-1/2 h-48 sm:h-80 md:h-100 rounded-2xl object-cover" src="/m_img01.png" alt="" />
           <div className="w-full sm:w-1/2 flex justify-center items-center rounded-2xl bg-[#F7F7F7] h-48 sm:h-80 md:h-100">
             <ImgDemoSvgIcons />
           </div>

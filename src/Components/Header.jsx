@@ -16,7 +16,7 @@ function Header({ onToggleSidebar }) {
             <FaBars />
           </button>
           <Link to={"/"} >
-          <img className="h-8 cursor-pointer md:h-10" src="/public/Logo.png" alt="logo" />
+          <img className="h-8 cursor-pointer md:h-10" src="/Logo.png" alt="logo" />
           </Link>
         </div>
 
@@ -40,7 +40,7 @@ function Header({ onToggleSidebar }) {
           </div>
           <div className="bg-[#303030] p-1 text-white rounded-xl flex items-center">
             <h2 className="ml-2 hidden md:block">Stellar Interiors</h2>
-            <img className="w-8 h-8 rounded-lg ml-2" src="/public/seller-img.png" alt="img1" />
+            <img className="w-8 h-8 rounded-lg ml-2" src="/seller-img.png" alt="img1" />
           </div>
         </div>
       </div>
