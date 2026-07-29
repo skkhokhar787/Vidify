@@ -4,7 +4,7 @@ import dashboardData from "../utility/dashboardData";
 import { NextSvgIcons, PrvSvgIcons } from "./AllSvgIcons";
 import { Link } from "react-router-dom";
 
-export default function DashboardTable() {
+export default function DashboardTable({ onOpenMakeVideo }) {
   return (
     <div className="p-3 sm:p-4 md:p-6">
       <div className="bg-white w-full rounded-xl shadow-sm overflow-hidden">
@@ -26,7 +26,7 @@ export default function DashboardTable() {
                 <th className="text-left px-3 sm:px-4 md:px-6 py-2.5 md:py-3">Action</th>
               </tr>
             </thead>
-            <TableBody data={dashboardData} />
+            <TableBody data={dashboardData} onOpenMakeVideo={onOpenMakeVideo} />
           </table>
         </div>
 

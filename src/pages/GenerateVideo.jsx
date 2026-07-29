@@ -2,7 +2,7 @@ import React from 'react'
 import ProgressCard from '../Components/ProgressCard'
 import Table from '../Components/Table'
 
-function GenerateVideo() {
+function GenerateVideo({ onOpenMakeVideo }) {
   return (
     <div className="flex flex-col flex-1 min-w-0 h-full overflow-y-auto">
       <div className="mx-3 sm:mx-4 md:mx-15 my-3 sm:my-4 md:my-5">
@@ -11,7 +11,7 @@ function GenerateVideo() {
       </div>
       <ProgressCard Plan={"Scale 40 Videos/Month"} Limit={"35/40 Videos"} />
       <div>
-        <Table />
+        <Table onOpenMakeVideo={onOpenMakeVideo} />
       </div>
     </div>
   )

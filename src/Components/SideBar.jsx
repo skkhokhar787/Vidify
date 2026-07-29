@@ -28,10 +28,10 @@ function SideBar({ open, onClose }) {
       <aside
         className={`
           sidebar-nav shrink-0 overflow-y-auto bg-[#F1F1F1] p-4 text-sm text-gray-700
-          fixed top-16 md:top-20 left-0 h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] z-50
+          fixed top-16 md:top-20 left-0 h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] z-40
           transition-transform duration-300 ease-in-out
           w-64 shadow
-          lg:relative lg:translate-x-0 lg:z-auto lg:top-0 lg:h-auto
+          lg:relative lg:translate-x-0 lg:z-auto lg:top-0 lg:h-full lg:flex lg:flex-col
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
       >

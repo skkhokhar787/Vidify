@@ -21,7 +21,7 @@ const ProgressBadge = ({ text }) => {
   );
 };
 
-const ActionButton = ({ progress }) => {
+const ActionButton = ({ progress, onOpenMakeVideo }) => {
   if (progress === "In Progress" || progress === "Completed") {
     return (
       <div className="flex gap-2 sm:gap-3">
@@ -32,12 +32,15 @@ const ActionButton = ({ progress }) => {
 
   return (
     <div className="flex gap-2 sm:gap-3">
-      <EyeSvgIcons /> <VideoSvgIcons />
+      <EyeSvgIcons />
+      <button onClick={onOpenMakeVideo} className="cursor-pointer">
+        <VideoSvgIcons />
+      </button>
     </div>
   );
 };
 
-export default function TableBody({ data }) {
+export default function TableBody({ data, onOpenMakeVideo }) {
   return (
     <tbody>
       {data.map((item) => (
@@ -66,7 +69,7 @@ export default function TableBody({ data }) {
           </td>
 
           <td className="px-3 sm:px-4 md:px-6 py-3 md:py-4">
-            <ActionButton progress={item.progress} />
+            <ActionButton progress={item.progress} onOpenMakeVideo={onOpenMakeVideo} />
           </td>
         </tr>
       ))}

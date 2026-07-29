@@ -2,6 +2,7 @@ import React from "react";
 import { FaBell } from "react-icons/fa";
 import { FaMagnifyingGlass, FaBars } from "react-icons/fa6";
 import { MaskedManSvgIcons } from "./AllSvgIcons";
+import { Link } from "react-router-dom";
 
 function Header({ onToggleSidebar }) {
   return (
@@ -14,7 +15,9 @@ function Header({ onToggleSidebar }) {
           >
             <FaBars />
           </button>
-          <img className="h-8 md:h-10" src="/public/Logo.png" alt="logo" />
+          <Link to={"/"} >
+          <img className="h-8 cursor-pointer md:h-10" src="/public/Logo.png" alt="logo" />
+          </Link>
         </div>
 
         <div className="hidden sm:flex items-center rounded-lg border-[#303030] bg-[#303030] border text-white flex-1 max-w-md mx-4">

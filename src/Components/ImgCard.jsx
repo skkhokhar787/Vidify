@@ -26,7 +26,7 @@ function ImgCard({ heading, img, boadyPara, icon, dis, buttonText, className = "
             {buttonText ? (
               <SimpleBtn text={buttonText} />
             ) : (
-              <ImgCardBtn Icon={icon} name={dis} />
+              <ImgCardBtn Icon={icon} name={dis} bg={"none"} />
             )}
           </div>
         </div>
