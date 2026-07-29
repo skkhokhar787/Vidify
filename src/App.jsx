@@ -8,6 +8,7 @@ import GenerateVideo from "./pages/GenerateVideo.jsx";
 import Footer from "./Components/Footer.jsx";
 import ViewVideo from "./pages/ViewVideo.jsx";
 import MakeVideoPopUp from "./Components/MakeVideoPopUp.jsx";
+import SubcriptionPlan from "./pages/SubcriptionPlan.jsx";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,7 +20,7 @@ function App() {
       <div className="flex flex-1 relative overflow-hidden">
         {sidebarOpen && (
           <div
-            className="fixed inset-0 bg-black/40 z-40 lg:hidden"
+            className="fixed inset-0 bg-black/40 z-50 lg:hidden"
             onClick={() => setSidebarOpen(false)}
           />
         )}
@@ -30,6 +31,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/generate" element={<GenerateVideo onOpenMakeVideo={() => setShowMakeVideo(true)} />} />
             <Route path="/viewvideo" element={<ViewVideo />} />
+            <Route path="/pricing" element={<SubcriptionPlan />} />
           </Routes>
           <Footer />
           {showMakeVideo && (

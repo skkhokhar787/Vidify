@@ -30,7 +30,7 @@ function SideBar({ open, onClose }) {
           sidebar-nav shrink-0 overflow-y-auto bg-[#F1F1F1] p-4 text-sm text-gray-700
           fixed top-16 md:top-20 left-0 h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] z-40
           transition-transform duration-300 ease-in-out
-          w-64 shadow
+          w-64 
           lg:relative lg:translate-x-0 lg:z-auto lg:top-0 lg:h-full lg:flex lg:flex-col
           ${open ? "translate-x-0" : "-translate-x-full"}
         `}
@@ -74,9 +74,13 @@ function SideBar({ open, onClose }) {
               >
                 <span>Generate Video</span>
               </Link>
-              <li className="flex font-medium items-center p-2 pl-8 hover:font-medium hover:text-black rounded hover:cursor-pointer hover:bg-white hover:rounded-2xl text-gray-600">
+              <Link
+                to="/pricing"
+                onClick={onClose}
+                className="flex font-medium items-center p-2 pl-8 hover:font-medium hover:text-black hover:cursor-pointer hover:bg-white hover:rounded-2xl text-gray-600"
+              >
                 <span>Subscription Plan</span>
-              </li>
+              </Link>
             </ul>
           </div>
           <div className={`flex items-center mt-8 lg:mt-20 gap-2 justify-center ml-4 w-fit hover:cursor-pointer`}>
